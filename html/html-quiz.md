@@ -1378,9 +1378,9 @@ As Steve Krug once said, happy talk must die.
 </details>
 ```
 
-- [X] A
+- [x] A
       ![A](images/Q84-1.jpg)
-- [] B
+- [ ] B
       ![B](images/Q84-2.jpg)
 - [ ] C
       ![C](images/Q84-3.jpg)
@@ -1482,8 +1482,8 @@ As Steve Krug once said, happy talk must die.
 
 #### Q88. Which choice will produce the spanish word <i>canción</i>?
 
-- [ ] `<p lang="es">canción</p>`
-- [x] `<p lang="es">canci&oacuten</p>`
+- [x] `<p lang="es">canción</p>`
+- [ ] `<p lang="es">canci&oacuten</p>`
 - [ ] `<p lang="es">cancio'n</p>`
 - [ ] `<p lang="es">canci'on</p>`
 
@@ -1850,3 +1850,113 @@ As Steve Krug once said, happy talk must die.
 - [ ] The `<article>` element represents the dominant content of your document. There can be only one `<article>` element that is not hidden.
 
 [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)
+
+#### Q108. Users report that a form is not working. What is the culprit?
+
+```html
+<form action="/choices" disabled>
+  <fieldset disabled>
+    <legend>choices</legend>
+    <label>Choice 1 <input type="radio" name="choice" value="choice1" /></label>
+    <label>Choice 2 <input type="radio" name="choice" value="choice1" /></label>
+    <label>Choice 3 <input type="radio" name="choice" value="choice1" /></label>
+    <label>Choice 4 <input type="radio" name="choice" value="choice1" /></label>
+    <button>Choose!</button>
+  </fieldset>
+</form>
+```
+
+- [ ] The form element is disabled.
+- [ ] There is no <input type="submit"> element.
+- [x] The fieldset is disabled.
+- [ ] There is no method set on the form.
+
+A disabled fieldset is unusable and un-clickable. [Source](https://www.w3schools.com/tags/att_fieldset_disabled.asp)
+
+#### Q108. Which description list is coded correctly?
+
+- [x] A
+
+```html
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to server webpages, like Apache.</dd>
+  <dd>Hardware used to provide data to other computers.</dd>
+  <!--Other terms and descriptions -->
+</dl>
+```
+
+- [ ] B
+
+```html
+<dl>
+  <dd>Server</dd>
+  <dt>Software used to server webpages, like Apache.</dt>
+  <dt>Hardware used to provide data to other computers.</dt>
+  <!--Other terms and descriptions -->
+</dl>
+```
+
+- [ ] C
+
+```html
+<dt>
+    <dl>Server</dl>
+    <dd>Software used to server webpages, like Apache.</dd>
+    <dd>Hardware used to provide data to other computers.</dd>
+    <!--Other terms and descriptions -->
+</dt>
+```
+
+- [ ] D
+
+```html
+<dl>
+  <dt>Server</dt>
+  <dd>Software used to server webpages, like Apache.</dd>
+  <dt>Hardware used to provide data to other computers.</dt>
+  <!--Other terms and descriptions -->
+</dl>
+```
+
+#### 109. Which choice is the best way to mark up this layout?
+![Immagine 2022-08-26 125542](https://user-images.githubusercontent.com/80069786/186888988-34adfd67-dd60-40ed-ac56-645c730985a4.png)
+
+- [x]
+```html
+<h4><strong>Mailing Address</strong></h4>
+<address><em>
+	6410 Via Real <br>
+	Carpinteria, CA 93013<br>
+	<a href="mailto:info@linkedin.com">info@linkedin.com</a>
+</em></address>
+```
+
+- [ ]
+```html
+<h4>Mailing Address</h4>
+<address>
+	6410 Via Real <br>
+	Carpinteria, CA 93013<br>
+	<a href="mailto:info@linkedin.com">info@linkedin.com</a>
+</address>
+```
+
+- [ ]
+```html
+<p><strong>Mailing Address</strong></p>
+<p><em>
+	6410 Via Real <br>
+	Carpinteria, CA 93013<br>
+	<a href="mailto:info@linkedin.com">info@linkedin.com</a>
+</em></p>
+```
+
+- [ ]
+```html
+<h4>Mailing Address</h4>
+<p><em>
+	6410 Via Real <br>
+	Carpinteria, CA 93013<br>
+	<a href="mailto:info@linkedin.com">info@linkedin.com</a>
+</em></p>
